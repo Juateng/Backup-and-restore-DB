@@ -5,31 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Backup_XAML"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Click="Button_Click" Height="50" Width="70" Margin="518,128,212,256" >Browse</Button>
-        <Button x:Name="Backup_button" Click="Backup_Click" Height="50" Width="70" Margin="518,192,212,192" >Backup</Button>
-        <Button Click="Browse_button2" Height="50" Width="70" Margin="518,265,212,119" >browse 2</Button>
-        <Button x:Name="Restore_buttonB" Click="Restore_button" Height="50" Width="70" Margin="518,326,212,58" >Restore</Button>
-        <TextBox Name="textBox1" Width="10" MaxLength="10" Margin="274,-64,516,64" RenderTransformOrigin="0.5,0.5" >
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <TextBox Name="textBox2" Width="10" MaxLength="10" Margin="274,89,516,-89" RenderTransformOrigin="0.5,0.5" >
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-    </Grid>
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Button Click="Button_Click" Margin="88,98,694,440" >Browse</Button>
+            <Button x:Name="Backup_button" Click="Backup_Click" Margin="88,169,694,368" >Backup</Button>
+            <Button Click="Browse_button2" Margin="88,270,694,250" Content="browse " />
+            <Button x:Name="Restore_buttonB" Click="Restore_button" Margin="88,356,694,173" >Restore</Button>
+            <TextBox Name="textBox1" MaxLength="10" Margin="263,155,104,391" RenderTransformOrigin="0.5,0.5" TextChanged="textBox1_TextChanged" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <TextBox Name="textBox2" MaxLength="10" Margin="263,291,104,250" RenderTransformOrigin="0.5,0.5" TextChanged="textBox2_TextChanged" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0
+                                         "/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+        </Grid>
+    </Border>
 </Window>
