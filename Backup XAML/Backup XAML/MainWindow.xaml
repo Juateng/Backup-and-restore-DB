@@ -1,0 +1,60 @@
+﻿<Window x:Class="Backup_XAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Backup_XAML"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Button Click="Button_Click" Margin="88,98,694,440" >Buscar</Button>
+            <Button x:Name="Backup_button" Click="Backup_Click" Margin="88,169,694,368" >Backup</Button>
+            <Button Click="Browse_button2" Margin="88,348,694,172" Content="Buscar" />
+            <Button x:Name="Restore_buttonB" Click="Restore_button" Margin="88,434,694,95" >Restaurar</Button>
+            <TextBox Name="textBox1" MaxLength="10" Margin="263,155,104,391" RenderTransformOrigin="0.5,0.5" TextChanged="textBox1_TextChanged" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <TextBox Name="textBox2" MaxLength="10" Margin="263,397,104,144" RenderTransformOrigin="0.5,0.5" TextChanged="textBox2_TextChanged" >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0
+                                         "/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+
+            <TextBlock Text="Ingrese la ubicacion donde desea guardar el respaldo"
+                        VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="88,41,0,0"
+            />
+            <TextBlock Text="Ingrese la ubicacion donde se encuentra el respaldo para la restauración"
+                        VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="88,300,0,0"
+            />
+
+        </Grid>
+    </Border>
+</Window>

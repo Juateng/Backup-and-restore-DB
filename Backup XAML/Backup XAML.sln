@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backup XAML", "Backup XAML\Backup XAML.csproj", "{F31440D1-8665-4D4A-9357-9B03D4310AA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F31440D1-8665-4D4A-9357-9B03D4310AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31440D1-8665-4D4A-9357-9B03D4310AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31440D1-8665-4D4A-9357-9B03D4310AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31440D1-8665-4D4A-9357-9B03D4310AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C587B4BB-8CB8-4A5E-A98B-8DEE0BFE88D7}
+	EndGlobalSection
+EndGlobal
